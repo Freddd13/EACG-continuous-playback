@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EACG自动连播",
-  "version": "1.0",
+  "version": "0.1",
   "description": "仅在指定网站内（含外部 iframe）监听视频结束后触发下集按钮点击",
   "permissions": ["tabs", "scripting"],
   "host_permissions": ["<all_urls>"],
@@ -13,7 +13,7 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": ["config.js", "content.js"]
+      "js": ["content.js"]
     }
   ]
 }

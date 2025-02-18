@@ -4,8 +4,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     let allowed = false;
     if (sender.tab && sender.tab.url) {
       if (
-        sender.tab.url.startsWith("https://eacg.net") ||
-        sender.tab.url.startsWith("https://www.eacg1.com")
+        sender.tab.url.startsWith("https://eacg.net/Comicplay") ||
+        sender.tab.url.startsWith("https://www.eacg1.com/Comicplay")
       ) {
         console.log("当前 tab 属于目标网站：", sender.tab.url);
         allowed = true;
